@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  width: 400px;
+  height: auto;
+  background-image: linear-gradient(rgba(134, 134, 134, 0.952), #c6ff54f3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 5px 10px 5px;
+}
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+.img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+}
+.designation {
+  font-size: 16px;
+  font-family: "Courier New", monospace;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.816);
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.line img {
+  width: 80%;
+  opacity: 80%;
+}
+.descript {
+  text-transform: initial;
+  font-size: 16px;
+}
+.link {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.link a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.link a:hover {
+  color: rgb(0, 89, 255);
+}
+.link a i {
+  font-size: 18px;
+}
+.follows {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.item:hover{
+    color: rgba(0, 0, 0, 0.833);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.btn button {
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: 600;
+  margin: 0px 20px;
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgb(254, 53, 53);
+  transition-duration: 0.3s; /*transform slowly*/
+  transition-timing-function: cubic-bezier(
+    0.2,
+    -0.2,
+    0.2,
+    1.22
+  ); /*to define external scale */
+}
+.btn button:hover {
+  background-color: rgb(254, 53, 53);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.08); /*with & height extend*/
+}
+.like{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.social{
+  display: flex;
+  justify-content: space-evenly;
+}
+.social1 a i{
+  font-size: 24px;
+}
+.social1 a i:hover{
+transform: scale(1.025);
+}
+
+
+@media only screen and (max-width: 475px) {
+  .card{
+    width: 100%;
+  }
+  .btn button{
+   margin: 0px 10px;;
+  }
+}
